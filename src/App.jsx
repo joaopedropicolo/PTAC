@@ -4,7 +4,7 @@ export default function App() {
   
   return(
     <div>
-        <h1>Hello World</h1>
+        <h1>Olá Menino De Papai</h1>
         <p>Desenvolvido por: {nome}</p>
     </div>  
   );
