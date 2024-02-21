@@ -1,7 +1,7 @@
 export default function App() {
 
   const nome = "João Santos";
-  const picolo = "Picolo";
+  const picolo = "Picolo Brabão dos códigos";
 
   return(
     <div>
