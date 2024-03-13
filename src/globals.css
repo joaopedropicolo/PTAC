@@ -3,10 +3,20 @@ header{
     height: 100%;
     background: linear-gradient(red, yellow);
     border-bottom: 2px rgb(49, 49, 49) solid;
+    border: 5px solid #333;
 }
 
 footer{
     text-align: center;
     background: linear-gradient(red, yellow);
-    height: 100%;
+    border-top: 5px solid #333;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+}
+
+p {
+    font-size: 19px;
 }
