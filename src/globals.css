@@ -1,22 +1,33 @@
 header{
-    text-align: center;
-    height: 100%;
-    background: linear-gradient(red, yellow);
-    border-bottom: 2px rgb(49, 49, 49) solid;
-    border: 5px solid #333;
+    width: 100%;
+    height: 80px;
+    background: purple;
 }
 
 footer{
     text-align: center;
-    background: linear-gradient(red, yellow);
-    border-top: 5px solid #333;
+    background: purple;
     bottom: 0;
     left: 0;
-    height: 40px;
+    height: 80px;
     position: fixed;
     width: 100%;
 }
 
-p {
-    font-size: 19px;
+form{
+    text-align: center;
+    font-size: 21px;
+    padding-top: 50px;
+}
+
+input{
+    text-decoration: underline;
+    border-radius: 7px;
+    text-align: center;
+}
+
+button{
+    border-radius: 8px;
+    background-color: rgb(0, 255, 0);
+    font-size: 18px;
 }
