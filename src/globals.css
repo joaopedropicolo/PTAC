@@ -1,6 +1,6 @@
 header{
     position: fixed;
-    font-size: 23px;
+    font-size: 27px;
     font-weight: bold;
     text-align: center;
     width: 100%;
@@ -16,7 +16,7 @@ pre{
 
 footer{
     font-weight: bold;
-    font-size: 23px;
+    font-size: 27px;
     text-align: center;
     background: purple;
     bottom: 0;
