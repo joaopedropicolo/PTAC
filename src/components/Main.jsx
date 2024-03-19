@@ -18,6 +18,7 @@ export default function Main(){
             <br></br>
             {telefone}
            <br></br>
+           <button>Enviar</button>
         </form>
         </main>
     );
