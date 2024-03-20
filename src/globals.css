@@ -1,5 +1,6 @@
 header{
     font-family: Apple Chancery, cursive;
+    border-bottom: 4px dashed rgb(0, 0, 0);
     position: fixed;
     font-size: 27px;
     font-weight: bold;
@@ -11,12 +12,9 @@ header{
     left: 0;
 }
 
-pre{
-    padding-top: 50px;
-}
-
 footer{
     font-family: Apple Chancery, cursive;
+    border-top: 4px dashed rgb(0, 0, 0);
     font-weight: bold;
     font-size: 27px;
     text-align: center;
@@ -28,10 +26,27 @@ footer{
     width: 100%;
 }
 
-form{
+#bloco-insersoes{
+    border: 4px solid rgba(0, 238, 255, 0.507);
+    background-color: rgba(173, 173, 173, 0.507);
     text-align: center;
     font-size: 21px;
-    padding-top: 50px;
+    width: fit-content;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    padding-top: 40px;
+}
+
+#centralizacao-main {
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+}
+
+input:hover{
+    transition: 0.5s;
+    background: rgb(214, 214, 214);
 }
 
 input{
@@ -42,9 +57,21 @@ input{
     text-align: center;
 }
 
+button:hover{
+    transition: 0.5s;
+    background: rgb(0, 110, 255);
+}
+
 button{
     font-family: American Typewriter, serif;
     border-radius: 8px;
-    background: linear-gradient( 45deg,rgb(61, 74, 255), rgb(87, 235, 255));
+    background: rgb(147, 242, 255);
     font-size: 21px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.padding-input{
+    display: inline-block;
+    padding: 15px;
 }
