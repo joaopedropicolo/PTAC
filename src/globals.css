@@ -1,11 +1,12 @@
 header{
+    font-family: Apple Chancery, cursive;
     position: fixed;
     font-size: 27px;
     font-weight: bold;
     text-align: center;
     width: 100%;
     height: 80px;
-    background: purple;
+    background: linear-gradient( 45deg, rgb(0, 225, 255), rgb(45, 59, 255)) no-repeat;
     top: 0;
     left: 0;
 }
@@ -15,10 +16,11 @@ pre{
 }
 
 footer{
+    font-family: Apple Chancery, cursive;
     font-weight: bold;
     font-size: 27px;
     text-align: center;
-    background: purple;
+    background: linear-gradient( 45deg,rgb(45, 59, 255), rgb(0, 225, 255));
     bottom: 0;
     left: 0;
     height: 80px;
@@ -33,13 +35,16 @@ form{
 }
 
 input{
+    font-size: 17px;
+    font-family: American Typewriter, serif;
     text-decoration: underline;
     border-radius: 7px;
     text-align: center;
 }
 
 button{
+    font-family: American Typewriter, serif;
     border-radius: 8px;
     background-color: rgb(0, 255, 0);
-    font-size: 18px;
+    font-size: 21px;
 }
