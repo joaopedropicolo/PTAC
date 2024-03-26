@@ -12,6 +12,15 @@ header{
     left: 0;
 }
 
+a {
+    color: black;
+}
+
+ion-icon{
+    font-size: 39px;
+    padding-left: 12px;
+}
+
 footer{
     font-family: Apple Chancery, cursive;
     border-top: 4px dashed rgb(0, 0, 0);
@@ -27,7 +36,7 @@ footer{
 }
 
 #bloco-insersoes{
-    border: 4px solid rgba(0, 238, 255, 0.507);
+    border: 4px solid rgba(0, 238, 255, 0.726);
     background-color: rgba(173, 173, 173, 0.507);
     text-align: center;
     font-size: 21px;
@@ -50,7 +59,7 @@ input:hover{
 }
 
 input{
-    font-size: 17px;
+    font-size: 17.5px;
     font-family: American Typewriter, serif;
     text-decoration: underline;
     border-radius: 7px;
