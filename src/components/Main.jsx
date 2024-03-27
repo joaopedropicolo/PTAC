@@ -5,6 +5,7 @@ export default function Main(){
     const [nome, setNome] = useState("");
     const [telefone, setTelefone] = useState();
     const [listaContatos, setListaContatos] = useState ([]);
+    const []
     const salvar = function (){
         if(nome == "" || telefone == ""){
             console.log("Informações não foram inseridas.");
@@ -24,8 +25,7 @@ export default function Main(){
             registrar();
         }
     }
-    const registrar = (event) => {
-        event.preventDefault();
+    const registrar = () => {
         setListaContatos([...listaContatos,
         {
             nomeSalvo: nome,
