@@ -1,5 +1,4 @@
-header{
-    font-family: Apple Chancery, cursive;
+header{  
     border-bottom: 4px dashed rgb(0, 0, 0);
     position: fixed;
     font-size: 27px;
@@ -7,9 +6,20 @@ header{
     text-align: center;
     width: 100%;
     height: 80px;
-    background: linear-gradient( 45deg, rgb(0, 225, 255), rgb(45, 59, 255)) no-repeat;
+    background: linear-gradient( 45deg, rgb(111, 112, 112), rgb(30, 30, 32)) no-repeat;
     top: 0;
     left: 0;
+}
+
+#paragrafo-header{
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#alinhar-header{
+    display:inline-block;
+    padding-bottom: 60px;
 }
 
 a {
@@ -21,13 +31,17 @@ ion-icon{
     padding-left: 12px;
 }
 
+#call-icon{
+    padding-right: 12px;
+    display:inline-block;
+}
+
 footer{
-    font-family: Apple Chancery, cursive;
     border-top: 4px dashed rgb(0, 0, 0);
     font-weight: bold;
     font-size: 27px;
     text-align: center;
-    background: linear-gradient( 45deg,rgb(45, 59, 255), rgb(0, 225, 255));
+    background: linear-gradient( 45deg,rgb(30, 30, 32), rgb(111, 112, 112));
     bottom: 0;
     left: 0;
     height: 80px;
@@ -36,7 +50,8 @@ footer{
 }
 
 #bloco-insersoes{
-    border: 4px solid rgba(0, 238, 255, 0.726);
+    border: 3px solid rgba(42, 44, 44, 0.726);
+    border-radius: 28px;
     background-color: rgba(173, 173, 173, 0.507);
     text-align: center;
     font-size: 21px;
@@ -47,7 +62,7 @@ footer{
     padding-top: 40px;
 }
 
-#centralizacao-main {
+#centralizacao-main{
     display: flex;
     justify-content: center;
     padding-top: 90px;
@@ -68,13 +83,13 @@ input{
 
 button:hover{
     transition: 0.5s;
-    background: rgb(0, 110, 255);
+    background: rgb(172, 172, 172);
 }
 
 button{
     font-family: American Typewriter, serif;
     border-radius: 8px;
-    background: rgb(147, 242, 255);
+    background: rgb(102, 102, 102);
     font-size: 21px;
     padding-left: 50px;
     padding-right: 50px;
