@@ -49,7 +49,7 @@ footer{
     width: 100%;
 }
 
-#bloco-insersoes{
+.bloco-insersoes{
     border: 3px solid rgba(42, 44, 44, 0.726);
     border-radius: 28px;
     background-color: rgba(173, 173, 173, 0.507);

@@ -36,10 +36,12 @@ const registrar = () => {
         }
     }
 
+
+
     return(
         <div id="centralizacao-main">
         <main>
-            <div id="bloco-insersoes">
+            <div class="bloco-insersoes">
         <form onSubmit={registrar}>
             <label htmlFor="nome">Nome: </label>
             <div className="padding-input"><input type="text" name="" id="nome" value={nome} placeholder="Nome" onChange={(event)=> setNome(event.target.value)}/></div>
@@ -49,6 +51,9 @@ const registrar = () => {
             <div className="padding-input"><input type="tel" id="telefone" value={telefone} placeholder="Telefone" onChange={(event)=> setTelefone(event.target.value)}/></div>
            <button type="button" onClick={salvar}>Enviar</button>
         </form>
+            </div>
+            <div class="bloco-insersoes">
+            {listaContatos.map((contato, index)=> <p key={index}>{contato.nomeSalvo} {contato.apelidoSalvo} {contato.telefoneSalvo}</p>)}
             </div>
         </main>
         </div>
