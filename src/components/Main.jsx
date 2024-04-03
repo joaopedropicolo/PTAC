@@ -4,36 +4,37 @@ export default function Main(){
 
     const [nome, setNome] = useState("");
     const [telefone, setTelefone] = useState();
+    let [apelido, setApelido] = useState();
     const [listaContatos, setListaContatos] = useState ([]);
-    const []
+const registrar = () => {
+    setListaContatos([...listaContatos,
+    {
+        nomeSalvo: nome,
+        apelidoSalvo: apelido,
+        telefoneSalvo: telefone
+    }
+    ])
+    console.table(listaContatos);
+};
     const salvar = function (){
-        if(nome == "" || telefone == ""){
+        if(nome == "" || telefone == "" || apelido == ""){
             console.log("Informações não foram inseridas.");
             Swal.fire({
                 title: "ERRO",
-                text: "Não foram inseridos algumas das informações!",
+                text: "Não foram inseridos algumas das informações obrigatórias!",
                 icon: "error"
               });
         }
         else{
-            console.log("O nome do usuário é:", nome, "e seu telefone é:", telefone);
             Swal.fire({
                 title: "Contato Salvo!",
                 text: "Seu contato foi salvo com sucesso!",
                 icon: "success"
               });
             registrar();
+            console.log("As informações salvas são: Nome", nome, "Apelido:", apelido, "Telefone:", telefone);
         }
     }
-    const registrar = () => {
-        setListaContatos([...listaContatos,
-        {
-            nomeSalvo: nome,
-            telefoneSalvo: telefone
-        }
-        ])
-        console.table(listaContatos);
-    };
 
     return(
         <div id="centralizacao-main">
@@ -41,9 +42,11 @@ export default function Main(){
             <div id="bloco-insersoes">
         <form onSubmit={registrar}>
             <label htmlFor="nome">Nome: </label>
-            <div className="padding-input"><input type="text" name="" id="nome" value={nome} placeholder="Seu Nome" onChange={(event)=> setNome(event.target.value)}/></div>
+            <div className="padding-input"><input type="text" name="" id="nome" value={nome} placeholder="Nome" onChange={(event)=> setNome(event.target.value)}/></div>
+            <label htmlFor="nome">Apelido: </label>
+            <div className="padding-input"><input type="text" name="" id="apelido" value={apelido} placeholder="Apelido" onChange={(event)=> setApelido(event.target.value)}/></div>
             <label htmlFor="telefone">Telefone: </label>
-            <div className="padding-input"><input type="tel" id="telefone" value={telefone} placeholder="Seu Telefone" onChange={(event)=> setTelefone(event.target.value)}/></div>
+            <div className="padding-input"><input type="tel" id="telefone" value={telefone} placeholder="Telefone" onChange={(event)=> setTelefone(event.target.value)}/></div>
            <button type="button" onClick={salvar}>Enviar</button>
         </form>
             </div>
