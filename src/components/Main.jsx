@@ -1,7 +1,5 @@
 import { useState } from "react";
-
 export default function Main(){
-
     const [nome, setNome] = useState("");
     const [telefone, setTelefone] = useState();
     let [apelido, setApelido] = useState();
@@ -35,9 +33,6 @@ const registrar = () => {
             console.log("As informações salvas são: Nome", nome, "Apelido:", apelido, "Telefone:", telefone);
         }
     }
-
-
-
     return(
         <div id="centralizacao-main">
         <main>
@@ -52,8 +47,10 @@ const registrar = () => {
            <button type="button" onClick={salvar}>Enviar</button>
         </form>
             </div>
+            <br></br><br></br>
             <div class="bloco-insersoes">
-            {listaContatos.map((contato, index)=> <p key={index}>{contato.nomeSalvo} {contato.apelidoSalvo} {contato.telefoneSalvo}</p>)}
+                <h3>Contatos Salvos</h3>
+            {listaContatos.map((contato, index)=> <p key={index}>Nome: <p class="p-salvos">{contato.nomeSalvo}</p> Apelido: <p class="p-salvos">{contato.apelidoSalvo}</p> Telefone: <p class="p-salvos">{contato.telefoneSalvo}</p></p>)}
             </div>
         </main>
         </div>

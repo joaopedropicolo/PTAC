@@ -75,6 +75,15 @@ footer{
     padding-top: 40px;
 }
 
+h3{
+    text-decoration: underline;
+}
+
+.p-salvos{
+    text-align:initial;
+    text-decoration: underline;
+}
+
 #centralizacao-main{
     display: flex;
     justify-content: center;
