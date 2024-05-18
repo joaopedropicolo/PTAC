@@ -49,15 +49,6 @@ footer{
     width: 100%;
 }
 
-h3{
-    text-decoration: underline;
-}
-
-.p-salvos{
-    padding-top: 27px;
-    text-align: left;
-}
-
 .bloco-insersoes{
     border: 3px solid rgba(42, 44, 44, 0.726);
     border-radius: 28px;
