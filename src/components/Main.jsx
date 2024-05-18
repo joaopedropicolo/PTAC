@@ -39,7 +39,7 @@ const registrar = () => {
     return(
         <div id="centralizacao-main">
         <main>
-            <div id="bloco-insersoes">
+            <div class="bloco-insersoes">
         <form onSubmit={registrar}>
             <label htmlFor="nome">Nome: </label>
             <div className="padding-input"><input type="text" name="" id="nome" value={nome} placeholder="Nome" onChange={(event)=> setNome(event.target.value)}/></div>
@@ -50,6 +50,15 @@ const registrar = () => {
            <button type="button" onClick={salvar}>Enviar</button>
         </form>
             </div>
+            <br></br><br></br>
+        <div class="bloco-salvos">
+            <h3>Contatos Salvos:</h3>
+        {listaContatos.map((contato, index) =>
+        <div key={index}>
+            <p class="p-salvos">Nome: {contato.nomeSalvo} ||| Apelido: {contato.apelidoSalvo} ||| Telefone: {contato.telefoneSalvo}</p>
+        </div>
+        )}
+        </div>
         </main>
         </div>
     );
