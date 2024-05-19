@@ -2,7 +2,7 @@ import { useState } from "react";
 export default function Main(){
     const [nome, setNome] = useState("");
     const [telefone, setTelefone] = useState();
-    let [apelido, setApelido] = useState();
+    const [apelido, setApelido] = useState();
     const [listaContatos, setListaContatos] = useState ([]);
 const registrar = () => {
     setListaContatos([...listaContatos,
@@ -34,8 +34,8 @@ const registrar = () => {
         }
     }
     return(
-        <div id="centralizacao-main">
         <main>
+            <div id="centralizacao-main">
             <div class="bloco-insersoes">
         <form onSubmit={registrar}>
             <label htmlFor="nome">Nome: </label>
@@ -46,13 +46,14 @@ const registrar = () => {
             <div className="padding-input"><input type="tel" id="telefone" value={telefone} placeholder="Telefone" onChange={(event)=> setTelefone(event.target.value)}/></div>
            <button type="button" onClick={salvar}>Enviar</button>
         </form>
+        </div>
             </div>
-            <br></br><br></br>
+            <div id="centralizacao-salvos">
             <div class="bloco-insersoes">
-                <h3>Contatos Salvos</h3>
-            {listaContatos.map((contato, index)=> <p key={index}>Nome: <p class="p-salvos">{contato.nomeSalvo}</p> Apelido: <p class="p-salvos">{contato.apelidoSalvo}</p> Telefone: <p class="p-salvos">{contato.telefoneSalvo}</p></p>)}
+                <h3>Contatos Salvos:</h3>
+            {listaContatos.map((contato, index)=> <p key={index}><h4 class="h4-salvos">Nome:</h4> <p class="p-salvos">{contato.nomeSalvo}</p> <h4 class="h4-salvos">Apelido:</h4> <p class="p-salvos">{contato.apelidoSalvo}</p> <h4 class="h4-salvos">Telefone:</h4> <p class="p-salvos">{contato.telefoneSalvo}</p><p class="linha"></p></p>)}
+            </div>
             </div>
         </main>
-        </div>
     );
 }

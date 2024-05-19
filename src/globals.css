@@ -75,12 +75,27 @@ footer{
     padding-top: 40px;
 }
 
+#centralizacao-salvos{
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+}
+
+.linha{
+    border: 3px solid rgba(42, 44, 44, 0.726);
+    border-radius: 12px;
+    border-style: double;
+}
+
 h3{
     text-decoration: underline;
 }
 
 .p-salvos{
-    text-align:initial;
+    font-size: 18px;
+}
+
+.h4-salvos{
     text-decoration: underline;
 }
 
