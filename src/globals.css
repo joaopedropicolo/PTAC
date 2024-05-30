@@ -99,6 +99,20 @@ h3{
     text-decoration: underline;
 }
 
+#remover-contato:hover{
+    transition: 0.5s;
+    background: rgb(255, 0, 0);
+}
+
+#remover-contato{
+    font-family: American Typewriter, serif;
+    border-radius: 8px;
+    background: rgb(255, 190, 190);
+    font-size: 21px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 #centralizacao-main{
     display: flex;
     justify-content: center;
