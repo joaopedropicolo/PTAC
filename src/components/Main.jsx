@@ -19,11 +19,17 @@ const registrar = () => {
             console.log("Informações não foram inseridas.");
             Swal.fire({
                 title: "ERRO",
-                text: "Não foram inseridos algumas das informações obrigatórias!",
+                text: "Não foram inseridas algumas das informações obrigatórias!",
                 icon: "error"
               });
-        }
-        else{
+        } else if(telefone != Number){
+            console.log("Forma inseridas outras coisas além de numeros no telefone.");
+            Swal.fire({
+                title: "ERRO",
+                text: "Insira apenas números no telefone!",
+                icon: "error"
+              });
+        }else{
             Swal.fire({
                 title: "Contato Salvo!",
                 text: "Seu contato foi salvo com sucesso!",
@@ -51,7 +57,6 @@ const registrar = () => {
             confirmButtonText: "Cancelar",
             denyButtonText: `Remover`
           }).then((result) => {
-            /* Read more about isConfirmed, isDenied below */
             if (result.isConfirmed) {
               Swal.fire("Ação Cancelada!", "", "success");
             } else if (result.isDenied) {
