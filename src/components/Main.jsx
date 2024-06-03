@@ -22,6 +22,8 @@ const registrar = () => {
                 text: "Não foram inseridas algumas das informações obrigatórias!",
                 icon: "error"
               });
+        } else if(apelido == "picolo" || apelido == "Picolo"){
+            alert("E esse apelido? Você me ama né? Sai dai meu fã kkkkkkkk");
         }else{
             Swal.fire({
                 title: "Contato Salvo!",
