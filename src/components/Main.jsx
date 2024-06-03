@@ -22,13 +22,6 @@ const registrar = () => {
                 text: "Não foram inseridas algumas das informações obrigatórias!",
                 icon: "error"
               });
-        } else if(telefone != Number){
-            console.log("Forma inseridas outras coisas além de numeros no telefone.");
-            Swal.fire({
-                title: "ERRO",
-                text: "Insira apenas números no telefone!",
-                icon: "error"
-              });
         }else{
             Swal.fire({
                 title: "Contato Salvo!",
@@ -83,7 +76,7 @@ const registrar = () => {
             <div id="centralizacao-salvos">
                 <div class="bloco-insersoes">
             <h3>Contatos Salvos:</h3>
-                {listaContatos.map((contato, index)=> <p key={index}><h4 class="h4-salvos">Nome:</h4> <p class="p-salvos">{contato.nomeSalvo}</p> <h4 class="h4-salvos">Apelido:</h4> <p class="p-salvos">{contato.apelidoSalvo}</p> <h4 class="h4-salvos">Telefone:</h4> <p class="p-salvos">{contato.telefoneSalvo}</p><button id="remover-contato" onClick={()=> remover(index)}>X</button><p class="linha"></p></p>)}
+                {listaContatos.map((contato, index)=> <p key={index}><h4 class="h4-salvos">Nome:</h4> <p class="p-salvos">{contato.nomeSalvo}</p> <h4 class="h4-salvos">Apelido:</h4> <p class="p-salvos">{contato.apelidoSalvo}</p> <h4 class="h4-salvos">Telefone:</h4> <p class="p-salvos">{contato.telefoneSalvo}</p><button id="remover-contato" onClick={()=> remover(index)}>Remover</button><p class="linha"></p></p>)}
                 </div>
             </div>
         </main>
