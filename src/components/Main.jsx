@@ -23,7 +23,7 @@ const registrar = () => {
                 icon: "error"
               });
         } else if(apelido == "picolo" || apelido == "Picolo"){
-            alert("E esse apelido? Você me ama né? Sai dai meu fã kkkkkkkk");
+            alert(":D");
         }else{
             Swal.fire({
                 title: "Contato Salvo!",
