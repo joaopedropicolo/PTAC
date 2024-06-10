@@ -15,15 +15,25 @@ const registrar = () => {
     console.table(listaContatos);
 };
     const salvar = function (){
-        if(nome == "" || telefone == "" || apelido == ""){
+        if(nome == "" || apelido == ""){
             console.log("Informações não foram inseridas.");
             Swal.fire({
                 title: "ERRO",
                 text: "Não foram inseridas algumas das informações obrigatórias!",
                 icon: "error"
               });
+<<<<<<< Updated upstream
         } else if(apelido == "picolo" || apelido == "Picolo"){
             alert(":D");
+=======
+        } else if(telefone == Number){
+            console.log("Forma inseridas outras coisas além de numeros no telefone.");
+            Swal.fire({
+                title: "ERRO",
+                text: "Insira apenas números no telefone!",
+                icon: "error"
+              });
+>>>>>>> Stashed changes
         }else{
             Swal.fire({
                 title: "Contato Salvo!",
