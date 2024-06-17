@@ -1,8 +1,5 @@
-# React + Vite
+# Agenda Telefónica
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma atividade escolar do IFMS - NA da matéria Programação E Tecnologias Para Aplicações Cliente coordenada pelo professor [Marcelino Garcia](https://github.com/MarcelinoGarcia-NA)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Quaique](https://github.com/joaopedropicolo/PTAC/blob/main/1681035629_99916f0c3f154e9eb32d9f01922821a7.jpg)
