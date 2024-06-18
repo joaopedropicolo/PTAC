@@ -77,8 +77,22 @@ footer{
 
 #centralizacao-salvos{
     display: flex;
+    align-items: center;
     justify-content: center;
     padding-top: 35px;
+}
+
+.bloco-insersoes-contatos{
+    border: 3px solid rgba(42, 44, 44, 0.726);
+    border-radius: 28px;
+    background-color: rgba(173, 173, 173, 0.507);
+    text-align: center;
+    font-size: 21px;
+    width: fit-content;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    padding-top: 40px;
 }
 
 .linha{
@@ -149,4 +163,22 @@ button{
 .padding-input{
     display: inline-block;
     padding: 15px;
+}
+
+.avatar{
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+
+.container-contatos {
+    display: flex;
+}
+
+.itens-contatos {
+    width: 200px;
+    border: 2px solid #000;
+    margin: 6px;
+    padding: 6px;
+    border-radius: 6px;
+
 }
